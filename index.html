@@ -8,12 +8,32 @@
     <title>Ace Furnishings</title>
     <link rel="stylesheet" href="./CSS/w3.css">
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <!-- Header Section -->
     <div class="header">
-        <img src="IMG/sofa2.png" alt="sofa" class="sofa" width="1000px">
+        <img src="IMG/sofa.png" alt="sofa" id="sofa" class="sofa" width="300px">
+        <div class="mobileNavigation">
+
+            <div class="dropdown">
+                <button class="dropbtn" id="dropBtn1"><i class="fa fa-bars"></i></button>
+                <button class="closebtn" id="closeBtn1"><i class="fa fa-close"></i></button>
+                <div class="dropdown-content" id="dropdownContent">
+
+
+                    <span class="nav-link l1"><a href="index.html">Home</a></span>
+                    <span class="nav-link l2"><a href="PAGES/bedroom.html">Bedroom Furniture</a></span>
+                    <span class="nav-link l3"><a href="PAGES/livingRoom.html">Living room Furniture</a></span>
+                    <span class="nav-link l4"><a href="PAGES/aboutus.html">About Us</a></span>
+                    <span class="nav-link l5"><a href="PAGES/storageunits.html">Storage Units</a></span>
+                    <span class="nav-link l6"><a href="PAGES/blog.html">Blog</a></span>
+
+
+                </div>
+            </div>
+        </div>
         <div class="navigation">
             <span class="logo-container">
                 <img src="IMG/logo.png" width="200px"></img>
@@ -33,30 +53,30 @@
     </div>
 
 
-    <div class="slideshow-container">
 
+
+
+    <div class="slideshow-container" id="slideshow-container">
         <div class="mySlides fade">
-            <!-- <div class="numbertext">1 / 3</div> -->
-            <img src="IMG/CAROUSEL/1.jpg" style="width:100%">
-            <div class="text">1 / 3</div>
+            <img src='IMG/CAROUSEL/1.jpg' style='height: 665px;' alt="sally lightfoot crab" />
+            <!-- <div class="text">Sally Lightfoot Crab</div> -->
         </div>
-
         <div class="mySlides fade">
-            <!-- <div class="numbertext">2 / 3</div> -->
-            <img src="IMG/CAROUSEL/2.jpg" style="width:100%">
-            <div class="text">2 / 3</div>
+            <img src='IMG/CAROUSEL/2.jpg' style='height: 665px;' alt="fighting nazca boobies" />
+            <!-- <div class="text">A scuffle between two Nazca Boobies</div> -->
         </div>
-
         <div class="mySlides fade">
-            <!-- <div class="numbertext">3 / 3</div> -->
-            <img src="IMG/CAROUSEL/3.jpg" style="width:100%">
-            <div class="text">3 / 3</div>
+            <img src='IMG/CAROUSEL/1.jpg' style='height: 665px;' alt="otovalo waterfall" />
+            <!-- <div class="text">A waterfall discovered on a hike in Otovalo</div> -->
         </div>
-
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-
+        <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+        <a class="next" onclick='plusSlides(1)'>&#10095;</a>
     </div>
+    <br />
+
+
+
+
     <br>
 
     <div style="text-align:center">
@@ -94,7 +114,7 @@
             <img class="category-img" src="IMG/CATEGORY/1.jpg" width="200px">
             <img class="category-img" src="IMG/CATEGORY/2.jpg" width="200px">
             <img class="category-img" src="IMG/CATEGORY/3.jpg" width="200px">
-            <img class="category-img" src="IMG/CATEGORY/1.jpg" width="200px">
+            <img class="category-img" src="IMG/CATEGORY/4.jpg" width="200px">
         </div>
         <span class="category-captions">
             <p class="category-caption cc1">Caption 1</p>
@@ -113,7 +133,7 @@
         <div class="row">
             <div class="column">
                 <div class="card">
-                    <img src="IMG/BESTSELLERS/1.jpg" alt="Jane" style="width:100%">
+                    <img src="IMG/BESTSELLERS/1.jpg" alt="Jane" style="width:511px">
                     <div class="container">
                         <h2>Sample product 1</h2>
                         <p class="title">CATEGORY</p>
@@ -126,7 +146,7 @@
 
             <div class="column">
                 <div class="card">
-                    <img src="IMG/BESTSELLERS/2.jpg" alt="Mike" style="width:100%">
+                    <img src="IMG/BESTSELLERS/2.jpg" alt="Mike" style="width:511px">
                     <div class="container">
                         <h2>Sample product 2</h2>
                         <p class="title">CATEGORY</p>
@@ -139,7 +159,7 @@
 
             <div class="column">
                 <div class="card">
-                    <img src="IMG/BESTSELLERS/1.jpg" alt="John" style="width:100%">
+                    <img src="IMG/BESTSELLERS/4.jpg" alt="John" style="width:511px">
                     <div class="container">
                         <h2>Sample product 3</h2>
                         <p class="title">CATEGORY</p>
@@ -155,7 +175,7 @@
         <div class="row">
             <div class="column">
                 <div class="card">
-                    <img src="IMG/BESTSELLERS/1.jpg" alt="Jane" style="width:100%">
+                    <img src="IMG/BESTSELLERS/5.jpg" alt="Jane" style="width:511px">
                     <div class="container">
                         <h2>Sample product 4</h2>
                         <p class="title">CATEGORY</p>
@@ -168,7 +188,7 @@
 
             <div class="column">
                 <div class="card">
-                    <img src="IMG/BESTSELLERS/2.jpg" alt="Mike" style="width:100%">
+                    <img src="IMG/BESTSELLERS/6.jpg" alt="Mike" style="width:511px">
                     <div class="container">
                         <h2>Sample product 5</h2>
                         <p class="title">CATEGORY</p>
@@ -181,7 +201,8 @@
 
             <div class="column">
                 <div class="card">
-                    <img src="IMG/BESTSELLERS/3.jpg" alt="John" style="width:100%">
+                    <img src="IMG/BESTSELLERS/3.jpg" alt="John"
+                        style="width:511px; height: 340px; object-fit: scale-down;">
                     <div class="container">
                         <h2>Sample product 6</h2>
                         <p class="title">CATEGORY</p>
@@ -195,15 +216,31 @@
     </div>
 
 
+    <hr style="height: 60x; border: 1px solid black;">
+
     <!-- Blog Link -->
     <div class="blogLinkSection">
-        <h1>Visit Our Blog Section to Get Latest Updates!</h1>
+        <h1>Check Out Our Blog to Stay Updated!</h1>
         <button class="visitBlogBtn">Visit Blog!</button>
+    </div>
+
+    <hr style="height: 60x; border: 1px solid black;">
+
+    <!-- Store Section -->
+    <div class="storeSection">
+        <img src="IMG/store.jpg" alt="store" width="800px">
+        <h1 class="storeHeading"><a href="index.html">Visit Store</a></h1>
+
     </div>
 
 
 
+
     <script src="app.js"></script>
+    <script src="responsive.js"></script>
+
 </body>
 
 </html>
+
+<!-- file:///C:/Users/arjun/OneDrive/Desktop/acefurnishing/website/acefurnishings/index.html -->
